@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App</name>
+    </assembly>
+    <members>
+        <member name="T:App.Business.CarService">
+            <summary>
+            Service Class
+            </summary>
+        </member>
+        <member name="M:App.Business.CarService.Get">
+            <summary>
+            Get
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Business.CarService.Save(App.Domain.Model.Car)">
+            <summary>
+            Save 
+            </summary>
+            <param name="car"></param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Data.Repository.CarRepository">
+            <summary>
+            CarRepository Concrete
+            </summary>
+        </member>
+        <member name="T:App.Data.Repository.Repository`1">
+            <summary>
+            Repository Generic
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:App.Data.Repository.Repository`1.Delete(System.Guid)">
+            <summary>
+            Delete entity
+            </summary>
+            <param name="id"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Data.Repository.Repository`1.GetAsync">
+            <summary>
+            Get All
+            </summary>
+            <returns>List <typeparamref name="T"/></returns>
+            <returns><see cref="T:System.Nullable"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Data.Repository.Repository`1.GetByIdAsync(System.Guid)">
+            <summary>
+            Get Id Guid
+            </summary>
+            <param name="id"></param>
+            <returns>List <typeparamref name="T"/></returns>
+            <returns><see cref="T:System.Nullable"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:App.Data.Repository.Repository`1.Save(`0)">
+            <summary>
+            Save
+            </summary>
+            <param name="entity"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Data.Repository.Repository`1.Update(`0)">
+            <summary>
+             Update
+            </summary>
+            <param name="entity"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:App.Domain.Business.ICarService">
+            <summary>
+            ICarService business logic
+            </summary>
+        </member>
+        <member name="M:App.Domain.Business.ICarService.Save(App.Domain.Model.Car)">
+            <summary>
+            Save
+            </summary>
+            <param name="car"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Domain.Business.ICarService.Get">
+            <summary>
+            Get
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:App.Domain.Model.Car">
+            <summary>
+            Class Car
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Car.Chassis">
+            <summary>
+            Identity Vehicle
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Car.Color">
+            <summary>
+            Color car
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Car.Model">
+            <summary>
+            Define Model car
+            </summary>
+        </member>
+        <member name="M:App.Domain.Model.Car.#ctor(System.Guid,System.String)">
+            <summary>
+             Base constructor complete
+            </summary>
+            <param name="id"></param>
+            <param name="brand"></param>
+        </member>
+        <member name="M:App.Domain.Model.Car.#ctor(System.Guid,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor complete
+            </summary>
+            <param name="Id"></param>
+            <param name="Color"></param>
+            <param name="Model"></param>
+            <param name="Brand"></param>
+            <param name="Chassis"></param>
+        </member>
+        <member name="M:App.Domain.Model.Car.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor id automatic
+            </summary>
+            <param name="color"></param>
+            <param name="model"></param>
+            <param name="brand"></param>
+            <param name="chassis"></param>
+        </member>
+        <member name="T:App.Domain.Model.EntityBase">
+            <summary>
+            Class EntityBase object
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.EntityBase.Id">
+            <summary>
+            Indentity Guid
+            </summary>
+        </member>
+        <member name="M:App.Domain.Model.EntityBase.#ctor(System.Guid)">
+            <summary>
+            Constructor Pattern
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:App.Domain.Model.Person">
+            <summary>
+            Class Person object
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Person.Name">
+            <summary>
+            Property name 
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Person.Gender">
+            <summary>
+            Property gender 
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Person.Email">
+            <summary>
+            Property email 
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Person.Phone">
+            <summary>
+            Property phone
+            </summary>
+        </member>
+        <member name="M:App.Domain.Model.Person.#ctor(System.Guid)">
+            <summary>
+            Construct Pattern
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:App.Domain.Model.Person.#ctor(System.Guid,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor complete
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="gender"></param>
+            <param name="email"></param>
+            <param name="phone"></param>
+        </member>
+        <member name="M:App.Domain.Model.Person.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor generate id automatic
+            </summary>
+            <param name="name"></param>
+            <param name="gender"></param>
+            <param name="email"></param>
+            <param name="phone"></param>
+        </member>
+        <member name="T:App.Domain.Model.Vehicle">
+            <summary>
+            Vehicle Class
+            </summary>
+        </member>
+        <member name="P:App.Domain.Model.Vehicle.Brand">
+            <summary>
+            Model Vehicle
+            </summary>
+        </member>
+        <member name="M:App.Domain.Model.Vehicle.#ctor(System.Guid)">
+            <summary>
+            Constructor Pattern
+            </summary>
+            <param name="id">Property Indentity</param>
+        </member>
+        <member name="M:App.Domain.Model.Vehicle.#ctor(System.Guid,System.String)">
+            <summary>
+            Constructor complete
+            </summary>
+            <param name="id">Property Indentity</param>
+            <param name="brand"> Property brand </param>
+        </member>
+        <member name="T:App.Domain.Repository.ICarRepository">
+            <summary>
+            Car Repository interface
+            </summary>
+        </member>
+        <member name="T:App.Domain.Repository.IRepository`1">
+            <summary>
+            Repository Contract
+            </summary>
+        </member>
+        <member name="M:App.Domain.Repository.IRepository`1.Save(`0)">
+            <summary>
+            Save 
+            </summary>
+            <param name="entity"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Domain.Repository.IRepository`1.Update(`0)">
+            <summary>
+            Update 
+            </summary>
+            <param name="entity"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Domain.Repository.IRepository`1.Delete(System.Guid)">
+            <summary>
+            Delete entity
+            </summary>
+            <param name="id"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:App.Domain.Repository.IRepository`1.GetByIdAsync(System.Guid)">
+            <summary>
+            Get Id Guid
+            </summary>
+            <param name="id"></param>
+            <returns>List <typeparamref name="T"/></returns>
+            <returns><see cref="T:System.Nullable"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:App.Domain.Repository.IRepository`1.GetAsync">
+            <summary>
+            Get All
+            </summary>
+            <returns>List <typeparamref name="T"/></returns>
+            <returns><see cref="T:System.Nullable"/></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:App.Domain.Repository.IRepositoryBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:App.Domain.UseCase.CarUseCase.Delete">
+            <summary>
+            Delete Car
+            </summary>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Delete.#ctor(App.Domain.Repository.ICarRepository)">
+            <summary>
+            Constructor inversion controller
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Delete.Execute(System.Guid)">
+            <summary>
+               Execute Command
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Domain.UseCase.CarUseCase.Get">
+            <summary>
+            Get All Car
+            </summary>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Get.#ctor(App.Domain.Repository.ICarRepository)">
+            <summary>
+            Constructor inversion controller
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Get.Execute">
+            <summary>
+            Execute Command
+            </summary>
+            <returns>List <see cref="T:App.Domain.Model.Car"/> /></returns>
+        </member>
+        <member name="T:App.Domain.UseCase.CarUseCase.GetById">
+            <summary>
+            Get By Id
+            </summary>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.GetById.#ctor(App.Domain.Repository.ICarRepository)">
+            <summary>
+            Constructor inversion controller
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.GetById.Execute(System.Guid)">
+            <summary>
+            Execute Command
+            </summary>
+            <returns><see cref="T:App.Domain.Model.Car"/> /></returns>
+        </member>
+        <member name="T:App.Domain.UseCase.CarUseCase.Save">
+            <summary>
+            Save or Update Car
+            </summary>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Save.#ctor(App.Domain.Repository.ICarRepository)">
+            <summary>
+            Constructor inversion controller
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:App.Domain.UseCase.CarUseCase.Save.Execute(App.Domain.Model.Car)">
+            <summary>
+               Execute Command
+            </summary>
+            <param name="car"></param>
+            <returns>Boolean</returns>
+        </member>
+    </members>
+</doc>

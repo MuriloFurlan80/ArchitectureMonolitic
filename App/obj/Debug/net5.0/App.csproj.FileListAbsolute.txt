@@ -1,0 +1,17 @@
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.csproj.AssemblyReference.cache
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.GeneratedMSBuildEditorConfig.editorconfig
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.AssemblyInfoInputs.cache
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.AssemblyInfo.cs
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.csproj.CoreCompileInputs.cache
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.exe
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.deps.json
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.runtimeconfig.json
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.runtimeconfig.dev.json
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.dll
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\ref\App.dll
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.pdb
+D:\sources\Trainee\ArchitectureMonolitic\App\bin\Debug\net5.0\App.xml
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.dll
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\ref\App.dll
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.pdb
+D:\sources\Trainee\ArchitectureMonolitic\App\obj\Debug\net5.0\App.genruntimeconfig.cache
